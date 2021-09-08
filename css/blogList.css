@@ -1,0 +1,24 @@
+
+.featuredMedia{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+
+}
+
+.blogList {
+    width: 90%;
+    margin: 20px auto ;
+    
+}
+
+
+.postItem {
+    display: flex;
+    width: 90%;
+    color: black;
+}
+
+.postImage {
+    padding: 0 10px 10px;
+}
