@@ -3,6 +3,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const url = "http://carolinedanielrud.one/wp-json/wp/v2/posts";
 const blogPost = document.querySelector(".blogPost");
+const modal = document.querySelector(".modal");
 
 console.log(id);
 
@@ -23,9 +24,6 @@ async function getPost() {
                         <h1>${post.title.rendered}</h1>
                         <div class = "gallery">${post.content.rendered}</div>
                         <div class = "text">${post.excerpt.rendered}</div>
-                        <div class="modal">
-                            <img src="" alt="" class="full-img" />
-                            <p class="caption">gaksljklga</p>
                         </div>
                 `
 
@@ -46,6 +44,27 @@ async function getPost() {
         `;
     }
 }
+
+window.addEventListener("click", function (event) {
+    if (event.target.classList.contains("modal")) {
+        modal.classList.remove("open");
+    } else {
+        console.log(event.target.src)
+        modal.classList.add("open");
+        modal.innerHTML = `
+            <img src="${event.target.src}" alt="" class="full-img" />
+        `;
+    }
+
+
+});
+
+// modal.addEventListener("click", (e) => {
+//     if (e.target.classList.contains("modal")) {
+//         // modal.classList.remove("open");
+//         modal.style.opacity = "0";
+//     }
+// });
 
 
 
