@@ -1,9 +1,10 @@
 .carousel-container {
     position: relative;
     width: 90%;
+    height: 30vh;
     margin: auto;
-    /* display: flex; */
     overflow: hidden;
+
     
     
 }
@@ -12,7 +13,19 @@
     
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 100%;
+    
+}
+
+.carousel-slide a{
+    min-width: 100%;
+}
+
+.carousel-slide img {
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    /* padding-left: 1px; */
 }
 
 
@@ -27,6 +40,7 @@
     color: white;
     opacity: 0.9;
     cursor: pointer;
+    transform: translateY(50%);
 
 }
 
@@ -39,6 +53,7 @@
     color: white;
     opacity: 0.9;
     cursor: pointer;
+    transform: translateY(50%);
 
 }
 
