@@ -1,16 +1,29 @@
+.hero {
+    width: 100%;
+    min-height: 20vh;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    background-image: url(/images/trollstigen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #7D8A93;
+}
+
+
 nav {
     display: flex;
     justify-content: flex-end;
-    margin: auto;
     width: 90%;
+    marging: auto;
 }
 
 nav a {
-    margin: 5px 0 5px 10px;
+    color: white;
+    margin: 10px 0px 0px 25px;
     padding-left: 5px;
     text-decoration: none;
-    color: black;
-    font-size: 10px;
+    font-size: 0.8rem;
 }
 
 

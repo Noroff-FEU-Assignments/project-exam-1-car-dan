@@ -1,22 +1,27 @@
 .container {
     
-    background: rgb(149, 98, 98);
+    background: #BFBFBF;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     width: 400px;
-    max-width: 100%;
-    margin: auto;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+.formTitle {
+    padding: 20px 0;
+    text-align: center;
 }
 
 .form .text {
     border-bottom: 1px solid #f0f0f0;
-    background-color: rgb(197, 160, 160);
+    background-color: #f0f0f0;
     padding: 20px 40px;
 }
 
 .form {
-    padding: 30px 40px;
+    padding: 10px 40px 30px;
 }
 
 
@@ -42,41 +47,42 @@
 }
 
 .form-control textarea {
-    height: ;
+    height: 100px;
 }
 
 .form-control:focus {
     outline: 0;
-    border-color: #777;
+    border-color: #8C8C88;
 }
 
 .form-control.success input {
-    border-color: #2ecc71;
+    border-color: green;
 }
 
 .form-control.error input {
-    border-color: #e74c3c;
+    border-color: red;
 }
 
 .form-control i {
     visibility: hidden;
     position: absolute;
-    top: 40px;
+    top: 50%;
     right: 10px;
+    transform: translateY(-50%);
 }
 
 .form-control.success i.fa-check-circle {
-    color: #2ecc71;
+    color: green;
     visibility: visible;
 }
 
-.form-control.error{
-    color: #e74c3c;
+.form-control.error i.fa-exclamation-circle{
+    color: red;
     visibility: visible;
 }
 
 .form-control .small {
-    color: #e74c3c;
+    color: #202426;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -88,10 +94,10 @@
 }
 
 .form button {
-    background-color: #8e44ad;
-    border: 2px solid #8e44ad;
+    background-color: #591616;
+    border: 2px solid #591616;
     border-radius: 4px;
-    color: #fff;
+    color: #e7e7e7;
     font-size: 16px;
     padding: 10px;
     margin-top: 20px;
