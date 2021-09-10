@@ -45,7 +45,7 @@ async function getPost() {
     }
 }
 
-window.addEventListener("click", function (event) {
+function handleInteraction(event) {
     if (event.target.classList.contains("modal")) {
         modal.classList.remove("open");
     } else {
@@ -54,10 +54,26 @@ window.addEventListener("click", function (event) {
         modal.innerHTML = `
             <img src="${event.target.src}" alt="" class="full-img" />
         `;
+
     }
+}
+
+window.addEventListener(`touchstart`, handleInteraction);
+window.addEventListener(`click`, handleInteraction);
+
+// window.addEventListener("click", function (event) {
+//     if (event.target.classList.contains("modal")) {
+//         modal.classList.remove("open");
+//     } else {
+//         console.log(event.target.src)
+//         modal.classList.add("open");
+//         modal.innerHTML = `
+//             <img src="${event.target.src}" alt="" class="full-img" />
+//         `;
+//     }
 
 
-});
+// });
 
 // modal.addEventListener("click", (e) => {
 //     if (e.target.classList.contains("modal")) {
