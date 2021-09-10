@@ -44,8 +44,8 @@ async function getPost() {
         `;
     }
 }
-
 function handleInteraction(event) {
+    // event.preventDefault();
     if (event.target.classList.contains("modal")) {
         modal.classList.remove("open");
     } else {
@@ -54,12 +54,13 @@ function handleInteraction(event) {
         modal.innerHTML = `
             <img src="${event.target.src}" alt="" class="full-img" />
         `;
-
     }
 }
 
-window.addEventListener(`touchstart`, handleInteraction);
-window.addEventListener(`click`, handleInteraction);
+blogPost.addEventListener(`touchstart`, handleInteraction);
+modal.addEventListener(`touchstart`, handleInteraction);
+
+// window.addEventListener(`click`, handleInteraction);
 
 // window.addEventListener("click", function (event) {
 //     if (event.target.classList.contains("modal")) {
