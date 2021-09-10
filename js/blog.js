@@ -1,7 +1,7 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const url = "http://carolinedanielrud.one/wp-json/wp/v2/posts";
+const url = "https://carolinedanielrud.one/wp-json/wp/v2/posts";
 const blogPost = document.querySelector(".blogPost");
 const modal = document.querySelector(".modal");
 

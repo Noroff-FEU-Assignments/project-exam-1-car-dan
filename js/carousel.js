@@ -1,5 +1,5 @@
 const carouselSlide = document.querySelector(".carousel-slide");
-const url = "http://carolinedanielrud.one/wp-json/wp/v2/posts?_embed";
+const url = "https://carolinedanielrud.one/wp-json/wp/v2/posts?_embed";
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 

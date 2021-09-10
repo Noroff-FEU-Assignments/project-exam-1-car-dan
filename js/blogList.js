@@ -1,4 +1,4 @@
-const baseUrl = "http://carolinedanielrud.one/wp-json/wp/v2/posts?_embed";
+const baseUrl = "https://carolinedanielrud.one/wp-json/wp/v2/posts?_embed";
 const blogList = document.querySelector(".blogList");
 
 
