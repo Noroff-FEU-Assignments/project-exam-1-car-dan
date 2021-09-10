@@ -19,15 +19,22 @@ a {
     text-decoration: none;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
 main {
-    background-color: #ebebeb;
+    
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 footer {
+    margin-top: auto;
     
-    margin: 0px auto;
     background-color: #7D8A93;
     color: #591616;
     

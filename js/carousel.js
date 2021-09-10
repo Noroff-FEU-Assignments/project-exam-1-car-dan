@@ -2,94 +2,79 @@ const carouselSlide = document.querySelector(".carousel-slide");
 const url = "https://carolinedanielrud.one/wp-json/wp/v2/posts?_embed";
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
-
-let postId = 1;
-
-
+let imageIndex = 1;
+let translateX = 0;
 
 
-async function getImages() {
+// let postId = 1;
+
+
+async function getImages(url) {
     try {
         const response = await fetch(url);
         const posts = await response.json();
 
         carouselSlide.innerHTML = "";
 
-        console.log(posts);
 
         posts.forEach(function (post) {
             carouselSlide.innerHTML += `
-                        <a href="blog.html?id=${post.id}" class="postItem">
-                        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}"  id = "${postId}"class="featuredMedia" alt=""/>
-                        </a>
-                `
-            postId++;
-        })
+            <a href="blog.html?id=${post.id}" class="postItem">
+                        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}"  class="featuredMedia" alt=""/></a>`
 
-        const postItem = document.querySelectorAll(".postItem");
-        const carouselImages = document.querySelectorAll(".carousel-slide img");
+        });
 
-        for (let i = 0; i < posts.length; i++) {
-            const postLenght = posts.length - 1;
-            if (i === 0) {
-                carouselImages.id = `firstClone`;
-            } else if (i === postLenght) {
-                carouselImages.id = `lastClone`;
-            }
+
+
+
+    } catch (error) {
+        carouselSlide.innerHTML = `
+             <div class="error">
+                 <p>Something went wrong, please try agian later</p>
+             </div>
+         `;
+    }
+    const image = document.querySelectorAll(".postItem img");
+    console.log(image[0]);
+    const imageWidth = image[0].clientWidth;
+    console.log(imageWidth);
+
+    function carouselMoveLeft(event) {
+
+        if (imageIndex !== 1) {
+            imageIndex--;
+            translateX += imageWidth;
+            console.log(imageIndex);
+            carouselSlide.style.transform = `translateX(${translateX}px)`;
+
+        }
+        console.log(translateX);
+        console.log(imageIndex);
+
+
+    };
+    function carouselMove(event) {
+        const numberOfImages = document.querySelectorAll(".carousel-slide img").length;
+        if (imageIndex !== numberOfImages) {
+            imageIndex++;
+            translateX -= imageWidth;
+            carouselSlide.style.transform = `translateX(${translateX}px)`;
         }
 
+    };
+    prevBtn.addEventListener(`click`, carouselMoveLeft);
+    nextBtn.addEventListener(`click`, carouselMove);
+
+};
 
 
-
-        //Counter
-        let counter = 1;
-        const size = carouselImages[0].clientWidth;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px ) ';
-
-        //Button Listeners
-
-        nextBtn.addEventListener('click', () => {
-            if (counter >= carouselImages.length - 1) return;
-            carouselSlide.style.transition = "transform 0.5s ease-in-out";
-            counter++;
-            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px ) ';
-
-        });
-
-        prevBtn.addEventListener('click', () => {
-            if (counter <= 0) return;
-            carouselSlide.style.transition = "transform 0.4s ease-in-out";
-            counter--;
-            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px ) ';
-
-        });
-
-        carouselSlide.addEventListener('transitionend', () => {
-            if (carouselImages[counter].id === 'lastClone') {
-                carouselSlide.style.transition = "none";
-                counter = carouselImages.length - 2;
-                carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px ) ';
-            }
-            if (carouselImages[counter].id === 'firstClone') {
-                carouselSlide.style.transition = "none";
-                counter = carouselImages.length - counter;
-                carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px ) ';
-            }
-        })
-
-
-
-    }
-    catch (error) {
-        post.innerHTML = `
-            <div class="error">
-                <p>Something went wrong, please try agian later</p>
-            </div>
-        `;
-    }
-}
+getImages(url);
 
 
 
 
-getImages();
+
+
+
+
+

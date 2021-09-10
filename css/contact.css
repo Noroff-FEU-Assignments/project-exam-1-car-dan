@@ -1,6 +1,5 @@
 .container {
-    
-    background: #BFBFBF;
+    background: #7D8A93;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -18,26 +17,31 @@
     border-bottom: 1px solid #f0f0f0;
     background-color: #f0f0f0;
     padding: 20px 40px;
+    
 }
 
 .form {
     padding: 10px 40px 30px;
+    
 }
 
 
 .form-control {
+    font-family: 'Oswald', sans-serif;
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
 }
 
 .form-control label {
+    font-family: 'Oswald', sans-serif;
     display: inline-block;
     margin-bottom: 5px;
 }
 
 .form-control input,
 .form-control textarea {
+    font-family: 'Oswald', sans-serif;
     border: 2px solid #f0f0f0;
     border-radius: 4px;
     display: block;
@@ -56,10 +60,12 @@
 }
 
 .form-control.success input {
+    font-family: 'Oswald', sans-serif;
     border-color: green;
 }
 
 .form-control.error input {
+    font-family: 'Oswald', sans-serif;
     border-color: red;
 }
 
@@ -82,6 +88,7 @@
 }
 
 .form-control .small {
+    font-family: 'Oswald', sans-serif;
     color: #202426;
     position: absolute;
     bottom: 0;
@@ -94,6 +101,7 @@
 }
 
 .form button {
+    font-family: 'Oswald', sans-serif;
     background-color: #591616;
     border: 2px solid #591616;
     border-radius: 4px;
