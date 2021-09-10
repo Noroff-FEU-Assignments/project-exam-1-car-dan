@@ -15,8 +15,9 @@ nav {
     
     display: flex;
     justify-content: flex-end;
-    width: 90%;
-    marging: auto;
+    max-width: 40%;
+    float: right;
+    padding-right: 10px;
 }
 
 nav a {
