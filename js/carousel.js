@@ -26,7 +26,19 @@ async function getImages() {
             postId++;
         })
 
+        const postItem = document.querySelectorAll(".postItem");
         const carouselImages = document.querySelectorAll(".carousel-slide img");
+
+        for (let i = 0; i < posts.length; i++) {
+            const postLenght = posts.length - 1;
+            if (i === 0) {
+                carouselImages.id = `firstClone`;
+            } else if (i === postLenght) {
+                carouselImages.id = `lastClone`;
+            }
+        }
+
+
 
 
         //Counter
