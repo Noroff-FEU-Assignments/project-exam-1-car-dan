@@ -12,6 +12,7 @@
 
 
 nav {
+    
     display: flex;
     justify-content: flex-end;
     width: 90%;
@@ -23,7 +24,8 @@ nav a {
     margin: 10px 0px 0px 25px;
     padding-left: 5px;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 

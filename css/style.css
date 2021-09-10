@@ -10,6 +10,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Amatic SC', cursive;
     
 }
@@ -19,7 +20,7 @@ a {
 }
 
 main {
-    background-color: #BFBFBF;
+    background-color: #ebebeb;
     padding-top: 20px;
     padding-bottom: 20px;
 }

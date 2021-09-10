@@ -22,6 +22,17 @@
     
 }
 
+.infoText h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.infoText p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
 
 
 
