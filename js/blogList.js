@@ -1,6 +1,6 @@
 const baseUrl = "https://carolinedanielrud.one/wp-json/wp/v2/posts?_embed";
+const extraUrl = "https://carolinedanielrud.one/wp-json/wp/v2/posts?_embed&per_page=100";
 const blogList = document.querySelector(".blogList");
-
 
 
 async function getPosts(url) {
@@ -19,7 +19,7 @@ async function getPosts(url) {
                         <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" class="featuredMedia" alt=""/>
                 </div>
                 <div class="postTitle">
-                        <h2>${post.title.rendered}</h2>       
+                        <h2>${post.title.rendered}</h2>
                 </div>
             </a>
             `
@@ -38,4 +38,5 @@ async function getPosts(url) {
 
 }
 
-getPosts(baseUrl);
+getPosts(extraUrl);
+
