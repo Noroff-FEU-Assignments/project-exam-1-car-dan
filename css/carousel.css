@@ -1,6 +1,6 @@
 .carousel-container {
     width: 90%;
-    margin: 30px auto;
+    margin: 20vh auto 20px;
 }
 
 .carousel-container h2 {
@@ -72,69 +72,22 @@
 
 
 
+/* mediaqueries */
 
-
-
-
-
-/* .carousel-container {
-    position: relative;
-    width: 90%;
-    height: 30vh;
-    margin: auto;
-    overflow: hidden;
+@media only screen and (min-width: 1000px){
+    .carousel-slide img {
+    min-width: 300px;
+    }
 }
 
-.carousel-slide {
-
-    display: flex;
-    width: 100%;
-    height: 100%;
-
+@media only screen and (min-width: 1200px){
+    .carousel-slide img {
+    min-width: 400px; 
+    }
 }
 
-.carousel-slide a{
-    min-width: 100%;
+@media only screen and (min-width: 2000px){
+    .carousel-slide img {
+    min-width: 500px; 
+    }
 }
-
-.carousel-slide img {
-    height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    /* padding-left: 1px; */
-/* } */
-
-
-/*
-
-#prevBtn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 1.5%;
-    font-size: 20px;
-    color: rgb(219, 6, 6);
-    opacity: 0.9;
-    cursor: pointer;
-    transform: translateY(50%);
-
-}
-
-#nextBtn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 1.5%;
-    font-size: 20px;
-    color: white;
-    opacity: 0.9;
-    cursor: pointer;
-    transform: translateY(50%);
-
-} */
-/*
-.carousel-slide p {
-    z-index: 5;
-    color: white;
-    position: absolute;
-} */
