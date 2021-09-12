@@ -1,11 +1,12 @@
 .carousel-container {
     width: 90%;
-    margin: 20vh auto 20px;
+    margin: 40px auto 20px;
 }
 
 .carousel-container h2 {
     text-align: center;
     font-size: 1.8rem;
+    
 }
 
 .carousel {

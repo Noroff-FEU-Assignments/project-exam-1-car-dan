@@ -13,6 +13,7 @@
     /* font-family: 'Oswald', sans-serif; */
     font-family: 'Amatic SC', cursive;
     
+    
 }
 
 a {
@@ -23,6 +24,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: rgb(255, 255, 255);
     
 }
 
@@ -35,8 +37,8 @@ main {
 footer {
     margin-top: auto;
     
-    background-color: #7D8A93;
-    color: #591616;
+    background-color: black;
+    color: whitesmoke;
     
 }
 
