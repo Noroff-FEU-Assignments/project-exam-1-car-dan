@@ -47,6 +47,12 @@
     object-position: 150%;
     
 }
+
+.info-text span {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
 /* .infoImage {
 
     position: relative;
