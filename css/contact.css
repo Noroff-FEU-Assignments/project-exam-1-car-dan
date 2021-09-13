@@ -1,5 +1,5 @@
 .container {
-    background: #7D8A93;
+    background: whitesmoke;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -11,10 +11,11 @@
 .formTitle {
     padding: 20px 0;
     text-align: center;
+    color: rgb(32, 48, 63);
 }
 
 .form .text {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #rgb(32, 48, 63);
     background-color: #f0f0f0;
     padding: 20px 40px;
     
@@ -42,7 +43,7 @@
 .form-control input,
 .form-control textarea {
     font-family: 'Oswald', sans-serif;
-    border: 2px solid #f0f0f0;
+    border: 2px solid rgb(32, 48, 63);
     border-radius: 4px;
     display: block;
     font-size: 14px;
@@ -56,7 +57,7 @@
 
 .form-control:focus {
     outline: 0;
-    border-color: #8C8C88;
+    border-color: rgb(32, 48, 63);
 }
 
 .form-control.success input {
@@ -89,7 +90,7 @@
 
 .form-control .small {
     font-family: 'Oswald', sans-serif;
-    color: #202426;
+    color: rgb(32, 48, 63);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -101,12 +102,13 @@
 }
 
 .form button {
-    font-family: 'Oswald', sans-serif;
-    background-color: #591616;
-    border: 2px solid #591616;
+    background-color: rgb(32, 48, 63);
+    border: 2px solid rgb(32, 48, 63);
     border-radius: 4px;
-    color: #e7e7e7;
-    font-size: 16px;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
     padding: 10px;
     margin-top: 20px;
     width: 100%;
