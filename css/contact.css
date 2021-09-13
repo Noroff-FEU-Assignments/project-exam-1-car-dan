@@ -57,11 +57,13 @@
     border-color: rgb(32, 48, 63);
 }
 
-.form-control.success input{
+.form-control.success input,
+.form-control.success textarea{
     border-color: green;
 }
 
-.form-control.error input{
+.form-control.error input,
+.form-control.error textarea{
     border-color: red;
 }
 
