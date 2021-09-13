@@ -2,7 +2,7 @@
     background: #2F465C;
 
     border-radius: 5px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     width: 400px;
     max-width: 90%;
@@ -57,15 +57,11 @@
     border-color: rgb(32, 48, 63);
 }
 
-.form-control.success input,
-.form-control textarea {
-    font-family: 'Oswald', sans-serif;
+.form-control.success input{
     border-color: green;
 }
 
-.form-control.error input,
-.form-control textarea {
-    font-family: 'Oswald', sans-serif;
+.form-control.error input{
     border-color: red;
 }
 
@@ -111,5 +107,6 @@
     padding: 10px;
     margin-top: 20px;
     width: 100%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
 
 }
