@@ -42,16 +42,18 @@
 
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 20px;
+    text-align: center;
     border-radius: 5px;
     object-position: 150%;
+    padding-bottom: 2px;
     
 }
 
 .info-text span {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: normal;
     letter-spacing: 1.5px;
+    border-bottom:  1px solid whitesmoke;
 }
 /* .infoImage {
 
