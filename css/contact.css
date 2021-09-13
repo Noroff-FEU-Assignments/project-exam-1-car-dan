@@ -1,17 +1,16 @@
 .container {
-    background: whitesmoke;
+    background: #2F465C;
+
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
     overflow: hidden;
     width: 400px;
     max-width: 90%;
     margin: 40px auto;
 }
 
-.formTitle {
-    padding: 20px 0;
-    text-align: center;
-    color: rgb(32, 48, 63);
+.formTitle  h1{
+    color: whitesmoke;
 }
 
 .form .text {
@@ -28,21 +27,19 @@
 
 
 .form-control {
-    font-family: 'Oswald', sans-serif;
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
 }
 
 .form-control label {
-    font-family: 'Oswald', sans-serif;
+    color: whitesmoke;
     display: inline-block;
     margin-bottom: 5px;
 }
 
 .form-control input,
 .form-control textarea {
-    font-family: 'Oswald', sans-serif;
     border: 2px solid rgb(32, 48, 63);
     border-radius: 4px;
     display: block;
@@ -60,12 +57,14 @@
     border-color: rgb(32, 48, 63);
 }
 
-.form-control.success input {
+.form-control.success input,
+.form-control textarea {
     font-family: 'Oswald', sans-serif;
     border-color: green;
 }
 
-.form-control.error input {
+.form-control.error input,
+.form-control textarea {
     font-family: 'Oswald', sans-serif;
     border-color: red;
 }
@@ -89,8 +88,8 @@
 }
 
 .form-control .small {
-    font-family: 'Oswald', sans-serif;
-    color: rgb(32, 48, 63);
+    
+    color: whitesmoke;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -104,7 +103,7 @@
 .form button {
     background-color: rgb(32, 48, 63);
     border: 2px solid rgb(32, 48, 63);
-    border-radius: 4px;
+    border-radius: 5px;
     color: whitesmoke;
     font-size: 2rem;
     font-weight: bold;
