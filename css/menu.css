@@ -14,11 +14,13 @@ header {
     background-color: rgb(32, 48, 63); */
 }
 .hero-img{
+    width: 90%;
     margin: 10px auto;
+    
 }
 
 .hero-img img{
-    width: 90%;
+    width: 100%;
     height: 100px;
     object-fit: cover;
     overflow: hidden;
