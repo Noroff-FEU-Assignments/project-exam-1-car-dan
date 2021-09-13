@@ -45,7 +45,7 @@ async function getPost() {
     }
 }
 function handleInteraction(event) {
-    // event.preventDefault();
+    event.preventDefault();
     if (event.target.classList.contains("modal")) {
         modal.classList.remove("open");
     } else {
@@ -58,7 +58,9 @@ function handleInteraction(event) {
 }
 
 blogPost.addEventListener(`touchstart`, handleInteraction);
+blogPost.addEventListener(`click`, handleInteraction);
 modal.addEventListener(`touchstart`, handleInteraction);
+modal.addEventListener(`click`, handleInteraction);
 
 // window.addEventListener(`click`, handleInteraction);
 

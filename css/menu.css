@@ -59,7 +59,7 @@ ul.menu-list li > a {
     text-decoration: unset;
     display: flex;
     color: #fff;
-    transition: 0.2s linear;
+    transition: 0.25s ease-out;
     text-transform: uppercase;
 }
 
@@ -71,7 +71,7 @@ body.fixed-nav nav#navbar {
 }
 
 ul.menu-list li > a:hover{
-    font-size: 2rem;
+    transform: scale(1.2);
 }
 
 
