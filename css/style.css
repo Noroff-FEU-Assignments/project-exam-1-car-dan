@@ -32,15 +32,14 @@ body {
 
 main {
     color: whitesmoke;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
 }
 
 footer {
     margin-top: auto;
     background-color: black;
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1rem;
     
 }
 
@@ -53,6 +52,15 @@ footer div {
     padding: 10px 0;
 
 }
+
+h1,
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
 
 
 
