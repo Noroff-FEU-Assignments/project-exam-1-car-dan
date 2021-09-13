@@ -31,7 +31,6 @@ async function getPosts(url) {
         };
 
         function displayMore(event) {
-            console.log("clicked");
             for (let i = itemsDisplayed; i < posts.length && (itemsDisplayed + 10); i++) {
                 blogList.innerHTML += `
                 <a href="blog.html?id=${posts[i].id}" class="postItem">
@@ -43,13 +42,13 @@ async function getPosts(url) {
                          </div>
                     </a>
             `
+                if ((itemsDisplayed + 10) > posts.length) {
+                    button.style.display = "none";
+                }
             };
             itemsDisplayed += 10;
+
         };
-
-
-
-
     }
     catch (error) {
         blogList.innerHTML = `
