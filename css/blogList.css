@@ -6,38 +6,35 @@
 }
 
 .listTitle {
+    
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2.5rem;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
 }
 
 .blogList{
     width: 100%;
     margin: 10px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+    border-radius: 5px;
 }
 
 
 .postItem {
-    margin: 20px auto;
-    display: flex;
-    width: 80%;
-    height: 80px;
+    background: #2F465C;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 100px;
     color: whitesmoke;
-    /* align-self: center;
-    justify-content: center; */
 }
 
 .postImage {
-    width: 40%;
-    left: 0;
-    /* padding: 0 10px 0px; */
+    overflow: hidden;
+    width: 100%;
 }
 
 .postImage img {
@@ -46,16 +43,31 @@
     object-fit: cover;
 }
 
-.postTitle {
-    max-width: 50%;
-    padding: 0 5px;
-    font-size: 1rem;
+.postTitle{
+    width: 100%;
     overflow: hidden;
 }
 
-.btnMore{
-    padding: 15px;
-    color: rgba(32, 48, 63, 1);
+.postTitle h2 {
+    font-size: 1rem;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button{
+     background-color: #2F465C;
+    border: 2px solid #2F465C;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 @media only screen and (min-width: 700px){
@@ -71,6 +83,12 @@
 
     .postItem{
         height: 150px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .blogList{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 }
 
