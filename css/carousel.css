@@ -23,13 +23,6 @@
     height: 100%;
 }
 
-.carousel-slide a {
-    margin: 0;
-    /* width: 100%;
-    height: 100%; */
-    
-    
-}
 
 .carousel-slide img {
     width: 100%;
@@ -42,7 +35,7 @@
     background: white;
     border: 0;
     border-radius: 30%;
-    color: black;
+    color: rgba(32, 48, 63, 1);
     cursor: pointer;
     font-size: 2rem;
     font-weight: bold;
@@ -52,6 +45,11 @@
     transition: opacity 0.25s;
     width: 3rem;
     z-index: 1;
+}
+
+.carousel .postItem {
+    /* border: 2px solid rgba(32, 48, 63, 1); */
+    margin: 0 1px;
 }
 
 #prevBtn {
