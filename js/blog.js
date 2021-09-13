@@ -45,7 +45,7 @@ async function getPost() {
     }
 }
 function handleInteraction(event) {
-    event.preventDefault();
+    // event.preventDefault();
     if (event.target.classList.contains("modal")) {
         modal.classList.remove("open");
     } else {
