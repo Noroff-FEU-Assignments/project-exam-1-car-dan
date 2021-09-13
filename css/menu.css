@@ -4,16 +4,25 @@ header {
 
 .hero {
     
-    min-height: 20vh;
-    margin: 0 auto;
+    /* min-height: 20vh;
+    margin: 0px auto;
     background-image: url(/images/trollstigen.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90% ;
     
-    background-color: rgb(32, 48, 63);
+    background-color: rgb(32, 48, 63); */
+}
+.hero-img{
+    margin: 10px auto;
 }
 
+.hero-img img{
+    width: 90%;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+}
 
 nav {
     top: 0;
