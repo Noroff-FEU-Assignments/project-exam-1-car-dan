@@ -34,10 +34,9 @@ async function getImages(url) {
              </div>
          `;
     }
+    
     const image = document.querySelectorAll(".postItem img");
-    console.log(image[0]);
     const imageWidth = image[0].clientWidth;
-    console.log(imageWidth);
 
     function carouselMoveLeft(event) {
 

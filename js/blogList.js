@@ -10,10 +10,6 @@ async function getPosts(url) {
     try {
         const response = await fetch(url);
         const posts = await response.json();
-        console.log(posts);
-        console.log(posts.length)
-
-
 
         blogList.innerHTML = " ";
 

@@ -2,9 +2,8 @@
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
-
-
 }
+
 .info-img{
     width: 100%;
     height: 100%;
@@ -30,42 +29,26 @@
 
 /* media queries */
 
-/* @media only screen and (min-width: 700px) {
+ @media only screen and (min-width: 700px) {
 
-    .infoImage {
-    height: 250px;
-}
-
-    .infoText h1 {
-        font-size: 2rem;
-    }
-
-    .infoText p{
-        font-size: 1.5rem;
-    }
+  
 }
 
 @media only screen and (min-width: 1000px) {
-    .infoImage {
-    height: 450px;
+    .info {
+    width: 50%;
+}
+    .carousel {
+        width: 70%;
     }
+
+
+
 }
 
 @media only screen and (min-width: 2000px){
-    .info{
-         margin: 150px auto;
-    }
+   .info{
+    width: 50%;
+}
 
-    .info img {
-        object-position: center 60%;
-
-    }
-
-     .infoText h1 {
-        font-size: 3.5rem;
-    }
-
-    .infoText p{
-        font-size: 2rem;
-    }
-} */
+} 

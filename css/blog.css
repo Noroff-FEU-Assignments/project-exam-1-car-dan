@@ -104,7 +104,9 @@
 }
 
 @media only screen and (min-width: 1000px){
-    
+    .blogPost{
+        width: 60%;
+    }
     .gallery {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-rows: 300px;

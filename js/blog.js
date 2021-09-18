@@ -33,7 +33,8 @@ async function getPost() {
             } else if (event.target = gallery) {
                 modal.classList.add("open");
                 modal.innerHTML = `
-            <img src="${event.target.src}" alt="" class="full-img" /> `;
+            <img src="${event.target.src}" alt="${event.target.alt}" class="full-img" /> 
+            <p>${event.target.alt}</p>`;
             };
         };
 
