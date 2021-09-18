@@ -31,12 +31,14 @@ async function getPost() {
             }
         })
         // console.log(post[0].content.rendered);
+        const gallery = document.querySelector(".gallery");
+        console.log(gallery)
 
         function handleInteraction(event) {
-            event.preventDefault();
+            // event.preventDefault();
             if (event.target.classList.contains("modal")) {
                 modal.classList.remove("open");
-            } else if (event.currentTarget.classList.contains("gallery")) {
+            } else if (event.target = gallery) {
                 console.log(event.currentTarget)
                 modal.classList.add("open");
                 modal.innerHTML = `
@@ -45,7 +47,7 @@ async function getPost() {
             }
         }
 
-        blogPost.addEventListener(`click`, handleInteraction);
+        gallery.addEventListener(`click`, handleInteraction);
         modal.addEventListener(`click`, handleInteraction);
 
     }
