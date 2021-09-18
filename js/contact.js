@@ -3,9 +3,9 @@ const name = document.querySelector("#name");
 const email = document.querySelector("#email");
 const subject = document.querySelector("#subject");
 const message = document.querySelector("#message");
-const nameLength = 5;
-const subjectLength = 15;
-const messageLength = 25;
+const nameLength = 6;
+const subjectLength = 16;
+const messageLength = 26;
 
 form.addEventListener(`submit`, e => {
     e.preventDefault();

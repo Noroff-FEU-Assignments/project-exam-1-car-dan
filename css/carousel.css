@@ -28,6 +28,7 @@
     width: 100%;
     min-width: 200px;
     min-height: 200px;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -72,6 +73,7 @@
     .carousel-slide img {
     min-width: 300px;
     min-height: 300px;
+    max-height: 300px;
     }
 }
 
@@ -79,6 +81,7 @@
     .carousel-slide img {
     min-width: 400px; 
     min-height: 400px;
+    max-height: 400px;
     }
 }
 
@@ -86,5 +89,6 @@
     .carousel-slide img {
     min-width: 500px;
     min-height: 500px; 
+    max-height: 500px;
     }
 }

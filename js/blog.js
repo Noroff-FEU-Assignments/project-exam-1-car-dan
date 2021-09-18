@@ -12,7 +12,7 @@ async function getPost() {
         const response = await fetch(url);
         const posts = await response.json();
 
-        console.log(posts);
+        console.log(posts[8].content);
 
         posts.forEach(function (post) {
             if (post.id != id) {
@@ -27,40 +27,46 @@ async function getPost() {
                         </div>
                 `
 
-                console.log(post.content);
-
 
             }
         })
+        // console.log(post[0].content.rendered);
 
+        function handleInteraction(event) {
+            event.preventDefault();
+            if (event.target.classList.contains("modal")) {
+                modal.classList.remove("open");
+            } else if (event.currentTarget.classList.contains("gallery")) {
+                console.log(event.currentTarget)
+                modal.classList.add("open");
+                modal.innerHTML = `
+            <img src="${event.target.src}" alt="" class="full-img" />
+        `;
+            }
+        }
 
+        blogPost.addEventListener(`click`, handleInteraction);
+        modal.addEventListener(`click`, handleInteraction);
 
     }
     catch (error) {
-        post.innerHTML = `
+        blogPost.innerHTML = `
             <div class="error">
                 <p>Something went wrong, please try agian later</p>
             </div>
         `;
     }
-}
-function handleInteraction(event) {
-    // event.preventDefault();
-    if (event.target.classList.contains("modal")) {
-        modal.classList.remove("open");
-    } else {
-        console.log(event.target.src)
-        modal.classList.add("open");
-        modal.innerHTML = `
-            <img src="${event.target.src}" alt="" class="full-img" />
-        `;
-    }
+
 }
 
-blogPost.addEventListener(`touchstart`, handleInteraction);
-blogPost.addEventListener(`click`, handleInteraction);
-modal.addEventListener(`touchstart`, handleInteraction);
-modal.addEventListener(`click`, handleInteraction);
+// const img = document.querySelectorAll(".gallery.wp-block-image");
+// console.log(img + "this")
+
+
+// blogPost.addEventListener(`touchstart`, handleInteraction);
+
+// modal.addEventListener(`touchstart`, handleInteraction);
+
 
 // window.addEventListener(`click`, handleInteraction);
 
