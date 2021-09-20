@@ -35,12 +35,13 @@
 .text {
     color: whitesmoke;
     width: 100%;
-    text-align: center;
+    
 }
 
 .blogPost h1 {
     font-size: 3rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .text p {

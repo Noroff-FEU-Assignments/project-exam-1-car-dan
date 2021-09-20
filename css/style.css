@@ -4,6 +4,8 @@
 @import url("blogList.css");
 @import url("blog.css");
 @import url("contact.css");
+@import url("about.css");
+
 
 
 *{
@@ -68,7 +70,7 @@ h2 {
 
 @media only screen and (min-width: 1000px){
     footer{
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 

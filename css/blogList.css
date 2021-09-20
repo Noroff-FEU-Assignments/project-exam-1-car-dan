@@ -3,6 +3,7 @@
     margin: 20px auto;
     font-size: 2rem;
     
+    
 }
 
 .listTitle {
@@ -11,7 +12,11 @@
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
-    letter-spacing: 0px;
+}
+
+.listTitle h1 {
+     font-size: 4rem;
+    letter-spacing: 2px;
 }
 
 .blogList{
@@ -30,6 +35,7 @@
     grid-template-columns: repeat(2,1fr);
     min-height: 100px;
     color: whitesmoke;
+    overflow: hidden;
 }
 
 .postImage {
@@ -45,11 +51,12 @@
 
 .postTitle{
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
+    padding: 20px;
 }
 
 .postTitle h2 {
-    font-size: 1rem;
+    /* font-size: 1.5rem; */
 }
 
 .btn {
@@ -81,9 +88,9 @@
         width: 70%;
     }
 
-    .postItem{
+    /* .postItem{
         height: 150px;
-    }
+    } */
 }
 
 @media only screen and (min-width: 1200px){

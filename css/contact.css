@@ -11,6 +11,8 @@
 
 .formTitle  h1{
     color: whitesmoke;
+    font-size: 3rem;
+    letter-spacing: 4px;
 }
 
 .form .text {
@@ -99,7 +101,7 @@
 }
 
 .form button {
-    background-color: rgb(32, 48, 63);
+    background-color: #2F465C;
     border: 2px solid rgb(32, 48, 63);
     border-radius: 5px;
     color: whitesmoke;
@@ -110,5 +112,6 @@
     margin-top: 20px;
     width: 100%;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 
 }

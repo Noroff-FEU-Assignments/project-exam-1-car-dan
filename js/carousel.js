@@ -19,7 +19,7 @@ async function getImages(url) {
 
         posts.forEach(function (post) {
             carouselSlide.innerHTML += `
-            <a href="blog.html?id=${post.id}" class="postItem">
+            <a href="blog.html?id=${post.id}" class="carouselSlideItem">
                         <img src="${post._embedded['wp:featuredmedia']['0'].source_url}"  class="featuredMedia" alt=""/></a>`
 
         });
@@ -34,8 +34,8 @@ async function getImages(url) {
              </div>
          `;
     }
-    
-    const image = document.querySelectorAll(".postItem img");
+
+    const image = document.querySelectorAll(".carouselSlideItem img");
     const imageWidth = image[0].clientWidth;
 
     function carouselMoveLeft(event) {

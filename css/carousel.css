@@ -23,6 +23,12 @@
     height: 100%;
 }
 
+.carousel-slide a {
+    min-width: 50%;
+}
+
+
+
 
 .carousel-slide img {
     width: 100%;
@@ -49,8 +55,7 @@
 }
 
 .carousel .postItem {
-    /* border: 2px solid rgba(32, 48, 63, 1); */
-    margin: 0 1px;
+    margin: 0 2px;
 }
 
 #prevBtn {
@@ -70,11 +75,17 @@
 /* mediaqueries */
 
 @media only screen and (min-width: 1000px){
+    .carousel-container{
+        width: 50%;
+    }
     .carousel-slide img {
     min-width: 300px;
     min-height: 300px;
     max-height: 300px;
     }
+    .carousel .postItem {
+    margin: 0 1px;
+}
 }
 
 @media only screen and (min-width: 1200px){
