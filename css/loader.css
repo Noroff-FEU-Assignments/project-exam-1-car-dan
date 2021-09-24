@@ -1,0 +1,46 @@
+.loader {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.loader .face {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.loader .face.face1,
+.loader .face.face2 {
+    border-left: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+}
+
+.loader .face.face1{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: animate 6s linear infinite;
+}
+
+.loader .face.face2{
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    animation: animate 6s linear reverse infinite;
+}
+
+
+@keyframes animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

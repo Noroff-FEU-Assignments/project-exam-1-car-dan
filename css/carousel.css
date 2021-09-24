@@ -1,6 +1,7 @@
 .carousel-container {
     width: 90%;
     margin: 0px auto 20px;
+    
 }
 
 
@@ -18,13 +19,14 @@
     display: flex;
     transform: translateX(0);
     transition: transform 0.25s;
-    /* overflow: hidden; */
     width: 100%;
     height: 100%;
+    background: #2F465C;
 }
 
 .carousel-slide a {
     min-width: 50%;
+    overflow: hidden;
 }
 
 
@@ -36,7 +38,17 @@
     min-height: 200px;
     max-height: 200px;
     object-fit: cover;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    
 }
+
+.carousel-slide img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+    
+
 
 .carousel .fas {
     background: white;
@@ -54,8 +66,8 @@
     z-index: 1;
 }
 
-.carousel .postItem {
-    margin: 0 2px;
+.carousel .carouselSlideItem {
+    margin: 0 .1rem;
 }
 
 #prevBtn {
@@ -83,9 +95,9 @@
     min-height: 300px;
     max-height: 300px;
     }
-    .carousel .postItem {
-    margin: 0 1px;
-}
+ .carousel .carouselSlideItem {
+    margin: 0 1rem;
+}   
 }
 
 @media only screen and (min-width: 1200px){
