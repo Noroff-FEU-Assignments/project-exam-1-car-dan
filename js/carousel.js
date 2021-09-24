@@ -61,6 +61,7 @@ async function getImages(url) {
         }
 
     };
+
     prevBtn.addEventListener(`click`, carouselMoveLeft);
     nextBtn.addEventListener(`click`, carouselMove);
 

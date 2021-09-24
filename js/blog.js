@@ -35,21 +35,20 @@ async function getPost() {
                 modal.innerHTML = `
             <img src="${event.target.src}" alt="${event.target.alt}" class="full-img" /> 
             <p>${event.target.alt}</p>`;
-            };
-        };
+            }
+        }
 
         gallery.addEventListener(`click`, handleInteraction);
         modal.addEventListener(`click`, handleInteraction);
-
     }
     catch (error) {
-        blogPost.innerHTML = `
-            <div class="error">
-                <p>Something went wrong, please try agian later</p>
-            </div>
-        `;
+        blogPost.innerHTML =
+            `
+                <div class="error">
+                    <p>Something went wrong, please try agian later</p>
+                </div>
+            `;
     }
-
 }
 
 
