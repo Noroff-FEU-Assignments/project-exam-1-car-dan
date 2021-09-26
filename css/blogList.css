@@ -52,12 +52,7 @@
 
 .postTitle{
     width: 100%;
-    /* overflow: hidden; */
     padding: 20px;
-}
-
-.postTitle h2 {
-    /* font-size: 1.5rem; */
 }
 
 .btn {
@@ -88,10 +83,6 @@
     .blogList {
         width: 70%;
     }
-
-    /* .postItem{
-        height: 150px;
-    } */
 }
 
 @media only screen and (min-width: 1200px){

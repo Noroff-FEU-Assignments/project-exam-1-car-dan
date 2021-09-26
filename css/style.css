@@ -14,8 +14,6 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Amatic SC', cursive;
-    
-    
 }
 
 a {
@@ -27,14 +25,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(255, 255, 255); */
     background-color: rgb(32, 48, 63);
-    
 }
 
 main {
     color: whitesmoke;
-    
 }
 
 footer {
@@ -42,7 +37,6 @@ footer {
     background-color: black;
     color: whitesmoke;
     font-size: 0.7rem;
-    
 }
 
 footer div {
@@ -52,7 +46,6 @@ footer div {
     align-items: center;
     margin: 0 auto;
     padding: 10px 0;
-
 }
 
 h1,
